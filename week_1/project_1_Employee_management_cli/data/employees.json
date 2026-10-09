@@ -1,0 +1,11 @@
+[
+    {
+        "id": "EMP100",
+        "name": "Test User",
+        "age": 25,
+        "department": "IT",
+        "role": "Data Analyst",
+        "salary": 50000.0,
+        "email": "test@example.com"
+    }
+]
