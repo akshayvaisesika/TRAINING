@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # API Data Collector
 
 ## 1. Project Overview
@@ -269,3 +270,220 @@ After temporary failure tests, restore the original API endpoint and validation 
 This project demonstrates how to build a modular Python application that retrieves information from a REST API, validates and transforms the data, exports it to JSON and CSV files, and records application activity using logging.
 
 It provides a foundation for understanding API integration, data processing, file handling, exception handling, and basic ETL workflows in Python.
+=======
+# API Data Collector
+
+## Project Overview
+
+The API Data Collector is a Python application that retrieves user data from a REST API, validates the response, transforms selected fields, and saves the processed data as JSON and CSV files.
+
+This project demonstrates API integration, data validation, data transformation, file handling, logging, exception handling, and automated testing using pytest.
+
+## Objectives
+
+- Fetch data from a REST API using an HTTP GET request.
+- Validate the API response and required fields.
+- Transform and standardize user data.
+- Save the processed data in JSON and CSV formats.
+- Handle API timeouts, connection errors, and HTTP errors.
+- Record application events and errors using logging.
+- Test application components using pytest.
+
+## API Used
+
+- **API:** JSONPlaceholder
+- **Endpoint:** https://jsonplaceholder.typicode.com/users
+- **HTTP Method:** GET
+- **Authentication:** Not required
+
+JSONPlaceholder is a public testing API that provides sample user data.
+
+## Technologies Used
+
+- Python
+- Requests
+- JSON
+- CSV
+- Logging
+- Pytest
+- uv
+
+## Project Structure
+
+```text
+project_2_api_data_collector/
+├── tests/
+│   ├── test_api_client.py
+│   ├── test_storage.py
+│   ├── test_transformer.py
+│   └── test_validator.py
+├── data/
+├── logs/
+│   └── app.log
+├── output/
+│   ├── users.json
+│   └── users.csv
+├── api_client.py
+├── logger.py
+├── main.py
+├── requirements.txt
+├── storage.py
+├── transformer.py
+├── validator.py
+├── README.md
+└── .gitignore
+```
+
+## Application Workflow
+
+1. **Fetch Data:** `api_client.py` sends a GET request to the API with a 10-second timeout.
+2. **Validate Data:** `validator.py` checks that the response is a non-empty list of dictionaries and that each record contains the required fields: `id`, `name`, and `email`.
+3. **Transform Data:** `transformer.py` converts names to uppercase and email addresses to lowercase.
+4. **Save Data:** `storage.py` saves the transformed data as JSON and CSV files.
+5. **Log Activities:** `logger.py` records application progress and errors.
+6. **Run Application:** `main.py` coordinates the complete data collection process and handles application-level exceptions.
+
+## Output Files
+
+The application saves the processed data in the `output/` directory.
+
+### JSON Output
+
+**File:** `output/users.json`
+
+Example:
+
+```json
+[
+    {
+        "id": 1,
+        "name": "LEANNE GRAHAM",
+        "email": "sincere@april.biz"
+    }
+]
+```
+
+### CSV Output
+
+**File:** `output/users.csv`
+
+Example:
+
+```csv
+id,name,email
+1,LEANNE GRAHAM,sincere@april.biz
+```
+
+The examples illustrate the output format. The actual API response contains multiple sample users.
+
+Each successful run overwrites the existing output files.
+
+## Logging and Error Handling
+
+Application logs are stored in `logs/app.log`.
+
+The application handles:
+
+- API request timeouts.
+- Connection errors.
+- HTTP errors.
+- Other request-related errors.
+- Invalid JSON responses.
+- Invalid API response structures.
+- Missing required fields.
+
+When an error occurs, the application records the error in the log and displays an error message.
+
+## Installation and Setup
+
+### Prerequisites
+
+- Python
+- uv package manager
+
+### Step 1: Create a Virtual Environment
+
+Open PowerShell in the project directory and run:
+
+```powershell
+uv venv
+```
+
+### Step 2: Install Dependencies
+
+```powershell
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+```
+
+### Step 3: Run the Application
+
+```powershell
+uv run --python .venv\Scripts\python.exe python main.py
+```
+
+Expected successful output:
+
+```text
+Data collection completed successfully.
+```
+
+After execution, check the `output/` directory for the generated JSON and CSV files.
+
+## Automated Testing
+
+Automated tests are implemented using pytest and stored in the `tests/` directory.
+
+| Test File | Purpose |
+|---|---|
+| `test_api_client.py` | Tests successful simulated API responses, timeouts, connection errors, and HTTP errors |
+| `test_storage.py` | Tests JSON and CSV file creation and contents |
+| `test_transformer.py` | Tests data transformation |
+| `test_validator.py` | Tests valid data, empty responses, invalid structures, and missing fields |
+
+### Run All Tests
+
+```powershell
+uv run --python .venv\Scripts\python.exe python -m pytest -v
+```
+
+### Run Only API Client Tests
+
+```powershell
+uv run --python .venv\Scripts\python.exe python -m pytest tests/test_api_client.py -v
+```
+
+### Test Results
+
+In the recorded test run:
+
+- **Total tests:** 12
+- **Passed:** 12
+- **Failed:** 0
+
+The API client tests use simulated responses and exceptions, so they do not make actual network requests.
+
+## Limitations
+
+- The application uses a public sample API.
+- Validation checks the response structure and required fields but does not fully validate field data types or email formats.
+- Data is stored in local JSON and CSV files rather than a database.
+- Existing output files are overwritten on each successful run.
+- Automated tests cover selected scenarios and do not cover every possible failure or the complete application workflow end-to-end.
+- Internet access is required to retrieve real API data.
+
+## Future Improvements
+
+- Add stricter validation for field types and email formats.
+- Implement retry logic for temporary network failures.
+- Add tests for malformed JSON and the complete application workflow.
+- Support configurable API endpoints and output paths.
+- Add database storage and scheduled data collection.
+
+## Author
+
+Akshay M
+
+---
+
+This project was developed as part of Python internship training.
+>>>>>>> 2041ef0 (Update project dependencies)
