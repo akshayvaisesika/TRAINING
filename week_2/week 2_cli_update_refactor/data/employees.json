@@ -1,0 +1,138 @@
+
+[
+    {
+        "id": "EMP100",
+        "name": "Test User",
+        "age": 25,
+        "department": "IT",
+        "role": "Data Analyst",
+        "salary": 50000.0,
+        "email": "test@example.com"
+    },
+    {
+        "id": "EMP102",
+        "name": "Arun Kumar",
+        "age": 28,
+        "department": "IT",
+        "role": "Software Engineer",
+        "salary": 65000.0,
+        "email": "arun.kumar@example.com"
+    },
+    {
+        "id": "EMP103",
+        "name": "Priya Nair",
+        "age": 32,
+        "department": "HR",
+        "role": "HR Manager",
+        "salary": 72000.0,
+        "email": "priya.nair@example.com"
+    },
+    {
+        "id": "EMP104",
+        "name": "Rahul Menon",
+        "age": 26,
+        "department": "Finance",
+        "role": "Financial Analyst",
+        "salary": 58000.0,
+        "email": "rahul.menon@example.com"
+    },
+    {
+        "id": "EMP105",
+        "name": "Anjali Suresh",
+        "age": 29,
+        "department": "Data Science",
+        "role": "Data Scientist",
+        "salary": 80000.0,
+        "email": "anjali.suresh@example.com"
+    },
+    {
+        "id": "EMP106",
+        "name": "Vishnu Raj",
+        "age": 24,
+        "department": "IT",
+        "role": "Python Developer",
+        "salary": 48000.0,
+        "email": "vishnu.raj@example.com"
+    },
+    {
+        "id": "EMP107",
+        "name": "Meera Krishnan",
+        "age": 31,
+        "department": "Marketing",
+        "role": "Marketing Executive",
+        "salary": 55000.0,
+        "email": "meera.krishnan@example.com"
+    },
+    {
+        "id": "EMP108",
+        "name": "Nikhil Das",
+        "age": 27,
+        "department": "Operations",
+        "role": "Operations Analyst",
+        "salary": 52000.0,
+        "email": "nikhil.das@example.com"
+    },
+    {
+        "id": "EMP109",
+        "name": "Sneha Thomas",
+        "age": 30,
+        "department": "Data Science",
+        "role": "Machine Learning Engineer",
+        "salary": 85000.0,
+        "email": "sneha.thomas@example.com"
+    },
+    {
+        "id": "EMP110",
+        "name": "Adithya Mohan",
+        "age": 25,
+        "department": "Finance",
+        "role": "Accountant",
+        "salary": 45000.0,
+        "email": "adithya.mohan@example.com"
+    },
+    {
+        "id": "EMP111",
+        "name": "Divya Rajan",
+        "age": 34,
+        "department": "HR",
+        "role": "Recruiter",
+        "salary": 60000.0,
+        "email": "divya.rajan@example.com"
+    },
+    {
+        "id": "EMP112",
+        "name": "Kiran Babu",
+        "age": 28,
+        "department": "IT",
+        "role": "Database Administrator",
+        "salary": 70000.0,
+        "email": "kiran.babu@example.com"
+    },
+    {
+        "id": "EMP113",
+        "name": "Lakshmi Pillai",
+        "age": 27,
+        "department": "Marketing",
+        "role": "Content Specialist",
+        "salary": 47000.0,
+        "email": "lakshmi.pillai@example.com"
+    },
+    {
+        "id": "EMP114",
+        "name": "Sanjay Varma",
+        "age": 35,
+        "department": "Operations",
+        "role": "Operations Manager",
+        "salary": 78000.0,
+        "email": "sanjay.varma@example.com"
+    },
+    {
+        "id": "EMP115",
+        "name": "Neha George",
+        "age": 26,
+        "department": "Data Science",
+        "role": "Business Intelligence Analyst",
+        "salary": 62000.0,
+        "email": "neha.george@example.com"
+    }
+]
